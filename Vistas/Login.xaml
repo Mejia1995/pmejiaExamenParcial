@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pmejiaExamenParcial.Vistas.NewPage1"
+             Title="VENTANA LOGIN">
+    <VerticalStackLayout
+        
+         Spacing="20"
+         Padding="25">
+        
+        <Label 
+            Text="Iniciar Sesion"
+            TextColor="Red"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+             <Image Source="https://univercimas.com/wp-content/uploads/2021/05/Logo-de-la-Universidad-Tecnologica-Israel-UTI.png"
+            HeightRequest="130"/>
+      
+
+        <Grid>
+            <Grid.RowDefinitions>
+
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                
+
+            </Grid.ColumnDefinitions>
+            
+                <Label Text="Usuario"
+           TextColor="Blue"
+           Grid.Row="0"
+           Grid.Column="0"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"/>
+
+                <Entry x:Name="txtusuario"      
+           Placeholder="Ingrese su Usuario"
+           Grid.Row="0"
+           Grid.Column="1"
+           VerticalTextAlignment="Start"
+            HorizontalTextAlignment="Start"
+           />
+
+                <Label Text="Contraseña"
+           TextColor="Blue"
+           Grid.Row="1"
+           Grid.Column="0"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"/>
+
+                <Entry x:Name="txtcontraseña"        
+           Placeholder="Ingrese su Contraseña"
+           IsPassword="True"
+           Grid.Row="1"
+           Grid.Column="1"
+           VerticalTextAlignment="Start"
+           HorizontalTextAlignment="Start"
+           />
+            <Button x:Name="btnIngresar"
+                    Text="Iniciar Sesion"
+                    Clicked="btnIngresar_Clicked"
+                    Grid.Row="2"
+                    Grid.Column="0"/>
+            
+            <Button x:Name="btnAcercade"
+                    Text="Acerca de?"
+                    Clicked="btnAcercade_Clicked"
+                     Grid.Row="2"
+                    Grid.Column="1"/>
+
+
+        </Grid>
+
+
+    </VerticalStackLayout>
+</ContentPage>

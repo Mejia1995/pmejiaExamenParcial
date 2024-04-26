@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pmejiaExamenParcial.Vistas.vAcercade"
+             Title="VENTANA DEL SISTEMA">
+    <VerticalStackLayout Spacing="20"
+                         Padding="23">
+        <Label Text="Aplicacion de Registro de Estudiantes"
+               TextColor="Red"
+               FontSize="Body"/>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+
+            </Grid.ColumnDefinitions>
+            <Label 
+            Text="Estudiante:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+             Grid.Row="0"
+             Grid.Column="0"/>
+            <Label 
+            Text="Pedro Mejia"
+            VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                 Grid.Row="0"
+                 Grid.Column="1"/>
+
+            <Label 
+             Text="Curso:"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center"
+              Grid.Row="1"
+              Grid.Column="0"/>
+            <Label 
+             Text="Septimo A"
+             VerticalOptions="Start" 
+             HorizontalOptions="Start"
+              Grid.Row="1"
+              Grid.Column="1"/>
+                        <Label 
+             Text="Carrera:"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center"
+              Grid.Row="2"
+              Grid.Column="0"/>
+                        <Label 
+             Text="Aplicaciones Moviles"
+             VerticalOptions="Start" 
+             HorizontalOptions="Start"
+              Grid.Row="2"
+              Grid.Column="1"/>
+            <Label Text=""/>
+            <Label 
+             Text="2024"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center"
+             Grid.Row="3"
+                            Grid.Column="0"/>
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
